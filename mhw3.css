@@ -1,0 +1,364 @@
+#barra a {
+cursor: pointer;
+color: white;
+font-size:medium;
+line-height: 15px;
+margin-left: 10px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height:100%;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+#barra{
+  display: flex;
+  position: absolute;
+  top:10px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-right:10px;
+}
+
+.tasto {
+    background-color: navy ;
+    border:2px solid #000000;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding: 5px 5px;
+    text-decoration: none;    
+}
+
+.tasto:hover{
+    background-color: rgba(47, 47, 130, .7);
+    color:whitesmoke;
+}
+
+#menu{
+    width: 100vw;
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px;
+}
+
+.status p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  text-decoration: underline;
+  text-decoration-color: rgba(0,0,0,0.3);
+  text-underline-offset: 8px;
+}
+
+#overlay{
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    }
+
+header.intestazione{
+  background-image: url(./Immagine_background_Jungho_Lee.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100vw;
+}
+
+h1.titolo{
+  font-size: xx-large;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color:white;
+  text-align: center;
+  max-width: 780px;
+  text-shadow: 2px 2px 10px #000000;
+}
+
+form h1, section h1{
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(0,0,0,0.9);
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+.img_profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.img_profile img{
+    border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: black solid 3px;
+}
+
+.img_profile p{
+  margin: 5px;
+  font-size: medium;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+
+}
+
+#social:visited {
+    color:black;
+}
+
+#social:hover{
+    color:#3c3b3b
+}
+
+#social{
+    text-decoration: none;
+}
+
+section.contenuti{
+  display: flex;
+  background-color: whitesmoke;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenuti p{
+    font-size: calc(11px + 0.6vw);
+    margin: auto;
+  }
+
+.box {
+  display: flex;
+  justify-content:flex-start;
+  width: 66.67vw;
+  margin:80px;
+}
+
+ span.laterale p{
+    font-size: xx-large;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 40px;
+    height: fit-content;
+  }
+
+
+ span.centrale{
+    background: transparent;
+    width: 66.67vw;
+ }
+
+ .centrale .titolo_autore{
+    margin-left: 6px;
+    margin-bottom: 20px;
+}
+
+.centrale .titolo_autore h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.centrale .titolo_autore em{
+    font-size: 15px;
+    font-size: 1.3em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}    
+
+.centrale i{
+  font-family: 'Montserrat', sans-serif;
+  font-size: x-large;
+  
+}
+
+.centrale p{
+    padding-left: 2px;
+    margin-bottom: 20px;
+    line-height: normal;
+}
+
+.centrale p strong{
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+div.img_autore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+div.img_autore .immagine{
+    height: 40%;
+  width: 40%;
+  margin-bottom: 5px;
+
+}
+
+.poesia {
+display: inline-block;
+width: 100%;
+text-align: center;
+margin-bottom: 20px;
+}
+
+footer{
+    display: flex;
+    color:white;
+    background-color: rgba(28, 28, 52, 0.7);
+    font-family:'Montserrat', sans-serif ;
+    font-size: large;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    form {
+      width: 66%;
+      margin-left: auto;
+      margin-right: auto;	
+    }
+    
+    #api-view {
+      margin: 20px 0;
+      width: 66.67vw;
+      margin-left: auto;
+      margin-right: auto;
+      
+            
+    }
+
+    #api-view .spazio_libro {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 30px;
+      border: 1px solid slategray;
+      background-color: rgba(236, 233, 233, 0.3);
+   }
+#api-view.hidden{
+  display: none;
+}
+
+.spazio_libro span {
+  display:flex;
+  font-size: large;
+  font-family:Impact, 'Arial Narrow Bold', sans-serif;
+  color:#000000;
+  margin:auto;
+}
+
+#api-view .spazio_poesia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  border: 1px solid slategray;
+  background-color: rgba(236, 233, 233, 0.3);
+  margin-top: 5px;
+
+}
+
+.spazio_poesia h1{
+  font-family:'Montserrat', sans-serif;
+  font-size: medium;
+  padding: 3px;
+  color:black;
+  margin-top: 30px;
+
+}
+
+
+
+
+    @media (max-width:600px){
+      #barra{
+        display: none;
+      }
+  
+  header.intestazione{
+      flex-direction: column;
+      align-items:flex-start;
+   }
+  
+   #menu{
+      display: flex;
+      align-items: end;
+      flex-direction: column;
+      margin-top: 5px;
+    
+    }
+  }
+
+
+
+  @media (max-width:500px){
+    div.introduzione{
+      width: 85vw;
+    }
+  }
+
+
+  @media (max-width: 500px){
+    .box{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    } 
+ }
+
+ @media (max-width:500px){
+  span.sinistra {
+    width: fit-content;
+    margin-bottom: 5px;
+    margin-right: -40px;
+  }
+}
+
+@media (max-width:500px){
+  span.centro{
+    width: 85vw;
+  }
+}
+
+@media (max-width:500px){
+  div .img_autore .immagine{
+    height: 70%;
+    width: 70%;
+  }
+}
+
+@media (max-width:500px){
+
+  form h1, section h1, .spazio_poesia h1, .spazio_libro span{
+    font-size: smaller;
+  }
+
+  
+}
